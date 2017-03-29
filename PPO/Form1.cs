@@ -17,6 +17,9 @@ namespace PPO
             InitializeComponent();
         }
 
-
+        private void pbLienzo_MouseMove(object sender, MouseEventArgs e)
+        {
+            slCoordenadas.Text = e.Location.ToString();
+        }
     }
 }
