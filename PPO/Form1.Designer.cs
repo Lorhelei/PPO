@@ -377,6 +377,7 @@
             this.btnArco.Name = "btnArco";
             this.btnArco.Size = new System.Drawing.Size(26, 27);
             this.btnArco.TabIndex = 0;
+            this.btnArco.Text = "A";
             this.btnArco.UseVisualStyleBackColor = true;
             // 
             // btnLinea

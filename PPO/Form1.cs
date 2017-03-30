@@ -231,8 +231,12 @@ namespace PPO
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
+            pbPincelPrueba.Refresh();
             grosor = trackBar1.Value;
             lblGrosor.Text = trackBar1.Value.ToString();
+            Graphics pincelprueba = pbPincelPrueba.CreateGraphics();
+            Pen pincel = new Pen(ColorVar, grosor);
+            pincelprueba.DrawRectangle(pincel, pbPincelPrueba.Width/2, pbPincelPrueba.Height/2, 1 ,1);
         }
     }
 }
